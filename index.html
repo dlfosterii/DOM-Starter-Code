@@ -10,19 +10,23 @@
         body {
             font-size: 24px;
         }
+        span {
+            text-decoration: underline;
+        }
     </style>
 </head>
 
 <body>
     <p>
-        Once there was a miller who was poor, but who had a beautiful <span id="noun1">___________</span>.
+        Once there was a miller who was poor, but who had a <span id="adj1">___________</span> daughter.
         Now it happened that he had to go and speak to the king, and in order to make
-        himself appear important he said to him, "I have a daughter who can spin straw into gold."
+        himself appear important he said to him, "I have a daughter who can spin straw into <span id="noun1">________</span>."
     </p>
-
+    
     <p>
         The king said to the miller, "That is an art which pleases me well, if your daughter is as
-        clever as you say, bring her to-morrow to my <span id="noun2">________</span>, and I will put her to the test."
+        clever as you say, bring her tomorrow to my <span id="noun2">________</span>, and I will 
+        put her to the test."
     </p>
 
     <p>
@@ -63,13 +67,16 @@
     </p>
 
     <form>
-        <label>A Noun:
+        <label>Adjective:
+            <input type="text" id="adj1Input" value="" />
+        </label>
+        <label>Noun:
             <input type="text" id="noun1Input" value="" />
         </label>
-        <label>Another Noun:
+        <label>Noun:
             <input type="text" id="noun2Input" value="" />
         </label>
-        <label>Yet Another Noun:
+        <label>Noun:
             <input type="text" id="noun3Input" value="" />
         </label>
         <button type="button" id="clickMe">Click Me</button>
