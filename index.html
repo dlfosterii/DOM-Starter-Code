@@ -22,7 +22,7 @@
     <p>
         In hac habitasse platea dictumst. Aenean eget accumsan metus, vitae scelerisque lectus. Phasellus cursus lorem
         augue, sit amet tincidunt nulla iaculis sit amet. Vivamus iaculis sodales consectetur. Proin imperdiet odio nec
-        tellus luctus porttitor. Phasellus tristique eget dui ut convallis. Vestibulum suscipit, magna eget maximus
+        tellus luctus porttitor. Phasellus tristique eget dui ut convallis. <span id="noun3">_________</span> Vestibulum suscipit, magna eget maximus
         condimentum, nunc enim placerat orci, ut dapibus diam diam sed libero. In tincidunt, velit quis suscipit
         accumsan, sapien lacus consequat arcu, vel venenatis lacus leo in quam. Aliquam euismod nibh nulla.</p>
     <form>
@@ -32,19 +32,12 @@
         <label>Another Noun:
             <input type="text" id="noun2Input" value="" />
         </label>
+        <label>Yet Another Noun:
+            <input type="text" id="noun3Input" value="" />
+        </label>
         <button type="button" id="clickMe">Click Me</button>
     </form>
 </body>
-<script>
-    const myButton = document.getElementById("clickMe");
-    const noun1 = document.getElementById("noun1");
-    const noun1Input = document.getElementById("noun1Input");
-
-    myButton.addEventListener('click', function (e) {
-        e.preventDefault();
-        
-        noun1.innerHTML = noun1Input.value;
-    });
-</script>
+<script src="./script.js"></script>
 
 </html>
